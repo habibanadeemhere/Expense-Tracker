@@ -27,7 +27,7 @@ export const googleLogin = createAsyncThunk(
   async () => {
     const { data, error } = await supabase.auth.signInWithOAuth({ provider: "google", 
         options: {
-            redirectTo: "https://fbnnmhjmbnkaoaydblru.supabase.co/auth/v1/callback",
+            redirectTo: "https://expense-tracker-seven-xi-66.vercel.app",
             flow: "popup",
         },
     });
